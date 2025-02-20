@@ -6,6 +6,7 @@ package Controller;
 
 import Model.DB_CONNECTION;
 import Views.Stock.AddStockFrame;
+import Views.Stock.SalesFrame;
 import Views.Supplier.AddSupplierFrame;
 import Views.User.AddUserFrame;
 import Views.Stock.UpdateDeleteStockView;
@@ -56,6 +57,8 @@ public class SuperAdmin extends javax.swing.JFrame {
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
 
         jMenu1.setText("jMenu1");
 
@@ -149,6 +152,18 @@ public class SuperAdmin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
+        jMenu3.setText("Manage Sales");
+
+        jMenuItem10.setText("Sales Page");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem10);
+
+        jMenuBar1.add(jMenu3);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -221,6 +236,11 @@ public class SuperAdmin extends javax.swing.JFrame {
         new UpdateDeleteSupplierView().setVisible(true);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        // TODO add your handling code here:
+        new SalesFrame().setVisible(true);
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -262,10 +282,12 @@ public class SuperAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
